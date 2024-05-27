@@ -1,4 +1,4 @@
-// package javaproject;
+// 1
 
 import java.util.Scanner;
 
@@ -155,13 +155,48 @@ public class Main {
         // dati in input da tastiera due numeri che rappresentano base e altezza,
         // stampi il valore dell'area di un triangolo (base*altezza/2)
 
-        System.out.println("Inserisci il primo numero");
-        int base = scanner.nextInt();
+        // System.out.println("Inserisci il primo numero");
+        // int base = scanner.nextInt();
 
-        System.out.println("Inserisci il secondo numero");
-        int altezza = scanner.nextInt();
+        // System.out.println("Inserisci il secondo numero");
+        // int altezza = scanner.nextInt();
 
-        System.out.println("L'aria del tuo triangolo è " + (base * altezza) / 2);
+        // System.out.println("L'aria del tuo triangolo è " + (base * altezza) / 2);
+
+        // Scrivi un programma Java che chieda all'utente di scegliere tra due numeri
+        // (0 per calcolare l'area di un triangolo e 1 per l'area di un quadrato) e,
+        // in base a quale figura geometrica ha scelto, chiedere i dati mancanti e
+        // stampare l'area della figura geometrica richiesta.
+        // Esempio
+        // Se l'utente sceglie 0, chiedere di inserire base e altezza, calcolare l'area
+        // (base*altezza/2) e stamparla.
+        // Se l'utente sceglie 1, chiedere inserire il valore del lato, calcolare l'area
+        // (lato*lato) e stamparla.
+
+        System.out.println(
+                "Inserisci 0 se vuoi calcolare l'area di un triangolo oppure 1 se vuoi calcolare l'area di un quadrato");
+        int choice = scanner.nextInt();
+
+        if (choice == 0) {
+            System.out.println("Inserisci il valore della base");
+            int base = scanner.nextInt();
+
+            System.out.println("Inserisci il valore dell'altezza");
+            int altezza = scanner.nextInt();
+
+            System.out.println("L'area del triangolo è di " + (base * altezza) / 2);
+
+        } else if (choice == 1) {
+            System.out.println("Inserisci il valore dell primo lato");
+            int lato1 = scanner.nextInt();
+
+            System.out.println("Inserisci il valore del secondo lato");
+            int lato2 = scanner.nextInt();
+
+            System.out.println("L'area del quadrato è di " + (lato1 * lato2));
+        } else {
+            System.out.println("La tua scelta non è corretta");
+        }
 
     }
 }
