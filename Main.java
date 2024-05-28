@@ -5,10 +5,11 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
+
+        Scanner scanner = new Scanner(System.in);
+
         // int x = 32;
         // x = 288;
-        Scanner scanner = new Scanner(System.in);
         //
         // System.out.println("Come ti chiami?");
         // String nome = scanner.nextLine();
